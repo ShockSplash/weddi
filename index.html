@@ -32,7 +32,7 @@
   /* ---------- декоративные линии-разделители ---------- */
   .divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:54px 0 34px}
   .divider::before,.divider::after{content:"";height:1px;width:64px;background:var(--line)}
-  .divider svg{width:26px;height:26px;color:var(--ink-soft)}
+  .divider svg{width:24px;height:24px;color:var(--ink-soft);overflow:visible;display:block}
 
   .script{font-family:'Marck Script',cursive;font-weight:400}
   .serif{font-family:'Cormorant Garamond',serif}
@@ -263,7 +263,7 @@
 <div class="wrap">
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- WELCOME -->
@@ -274,7 +274,7 @@
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- DATE -->
@@ -290,7 +290,7 @@
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- LOCATION -->
@@ -308,7 +308,7 @@
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- TIMELINE (заглушка) -->
@@ -316,16 +316,16 @@
     <h2 class="section-title">Расписание дня</h2>
     <div class="section-sub">7 августа · программа праздника</div>
     <div class="timeline">
-      <div class="t-item"><div class="t-time">13:30</div><div class="t-text">Автобус в Ижевск <span class="muted">— прибытие и отправление, 47 мест</span></div></div>
-      <div class="t-item"><div class="t-time">15:30</div><div class="t-text">Фуршет</div></div>
-      <div class="t-item"><div class="t-time">16:00</div><div class="t-text">Выездная регистрация <span class="muted">— дневной салют и фото с гостями</span></div></div>
+      <div class="t-item"><div class="t-time">13:30</div><div class="t-text">Автобус в Ижевск <b>Отправление от: г. Сарапул, ул. Красная площадь, 7</b></div></div>
+      <div class="t-item"><div class="t-time">15:30</div><div class="t-text">Встреча гостей, фуршет</div></div>
+      <div class="t-item"><div class="t-time">16:00</div><div class="t-text">Выездная регистрация <span class="muted"></span></div></div>
       <div class="t-item"><div class="t-time">17:00</div><div class="t-text">Банкет</div></div>
-      <div class="t-item"><div class="t-time">23:00</div><div class="t-text">Автобус в Сарапул <span class="muted">— отправление домой</span></div></div>
+      <div class="t-item"><div class="t-time">23:00</div><div class="t-text">Завершение банкета. Автобус в Сарапул</div></div>
     </div>
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- DRESS CODE -->
@@ -376,7 +376,7 @@
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- GIFTS -->
@@ -389,7 +389,7 @@
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- ORGANIZER -->
@@ -410,7 +410,7 @@
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <!-- RSVP -->
@@ -493,7 +493,7 @@
   </section>
 
   <div class="divider">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9C1 8.7 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 5 3.2 3.3 6.5C19 16.4 12 21 12 21z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.3l-1.45-1.32C5.4 14.25 2 11.18 2 7.4 2 4.42 4.42 2 7.4 2c1.68 0 3.3.78 4.6 2.04C13.3 2.78 14.92 2 16.6 2 19.58 2 22 4.42 22 7.4c0 3.78-3.4 6.85-8.55 11.59L12 20.3z"/></svg>
   </div>
 
   <footer>
